@@ -13,6 +13,8 @@
 		84C70CA628891C77004524A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C70CA428891C77004524A6 /* Main.storyboard */; };
 		84C70CA828891C84004524A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C70CA728891C84004524A6 /* Assets.xcassets */; };
 		84C70CAB28891C84004524A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C70CA928891C84004524A6 /* LaunchScreen.storyboard */; };
+		84C70CB42889495F004524A6 /* PortraitViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C70CB32889495B004524A6 /* PortraitViewDesign.swift */; };
+		84C70CBB288958B0004524A6 /* LandscapeViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C70CBA288958B0004524A6 /* LandscapeViewDesign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		84C70CA728891C84004524A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C70CAA28891C84004524A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C70CAC28891C84004524A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C70CB32889495B004524A6 /* PortraitViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewDesign.swift; sourceTree = "<group>"; };
+		84C70CBA288958B0004524A6 /* LandscapeViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		84C70C9D28891C76004524A6 /* MirianMaglakelidze#19 */ = {
 			isa = PBXGroup;
 			children = (
+				84C70CC128899143004524A6 /* Views */,
+				84C70CC02889911E004524A6 /* Controllers */,
 				84C70C9E28891C77004524A6 /* AppDelegate.swift */,
 				84C70CA028891C77004524A6 /* SceneDelegate.swift */,
-				84C70CA228891C77004524A6 /* ViewController.swift */,
 				84C70CA428891C77004524A6 /* Main.storyboard */,
 				84C70CA728891C84004524A6 /* Assets.xcassets */,
 				84C70CA928891C84004524A6 /* LaunchScreen.storyboard */,
 				84C70CAC28891C84004524A6 /* Info.plist */,
 			);
 			path = "MirianMaglakelidze#19";
+			sourceTree = "<group>";
+		};
+		84C70CC02889911E004524A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C70CA228891C77004524A6 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C70CC128899143004524A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C70CBA288958B0004524A6 /* LandscapeViewDesign.swift */,
+				84C70CB32889495B004524A6 /* PortraitViewDesign.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C70CBB288958B0004524A6 /* LandscapeViewDesign.swift in Sources */,
 				84C70CA328891C77004524A6 /* ViewController.swift in Sources */,
+				84C70CB42889495F004524A6 /* PortraitViewDesign.swift in Sources */,
 				84C70C9F28891C77004524A6 /* AppDelegate.swift in Sources */,
 				84C70CA128891C77004524A6 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mirian-maglakelidze.MirianMaglakelidze-19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mirian-maglakelidze.MirianMaglakelidze-19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
